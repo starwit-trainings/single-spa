@@ -8,5 +8,10 @@ cd root
 npx create-single-spa --moduleType root-config
 rm .git
 
+mkdir app1
+cd app1
+npx create-single-spa --moduleType app-parcel
+
+
 
 https://single-spa-playground.org/playground
