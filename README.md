@@ -11,7 +11,6 @@ rm .git
 mkdir app1
 cd app1
 npx create-single-spa --moduleType app-parcel
-
-
+npm start -- --port 8500
 
 https://single-spa-playground.org/playground
