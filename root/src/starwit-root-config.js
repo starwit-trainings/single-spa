@@ -17,12 +17,13 @@ const layoutEngine = constructLayoutEngine({ routes, applications });
 
 applications.forEach(registerApplication);
 layoutEngine.activate();
-/*registerApplication(
-  '@starwit/app1',
-  () => System.import('@starwit/app1'),
-  location => location.pathname.startsWith('/app1/')
-);
 registerApplication(
+  '@starwit/app2',
+  () => System.import('@starwit/app2'),
+  location => location.pathname.startsWith('/app2/')
+);
+
+/*registerApplication(
   '@single-spa/welcome',
   () => System.import('@single-spa/welcome'),
   location => location.pathname.startsWith('/welcome/')
