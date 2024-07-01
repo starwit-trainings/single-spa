@@ -1,5 +1,6 @@
 {
   "name": "@starwit/app1",
+  "main": "src/startwit-app1.js",
   "scripts": {
     "start": "webpack serve",
     "start:standalone": "webpack serve --env standalone",
@@ -12,6 +13,9 @@
     "test": "cross-env BABEL_ENV=test jest",
     "watch-tests": "cross-env BABEL_ENV=test jest --watch",
     "coverage": "cross-env BABEL_ENV=test jest --coverage"
+  },
+  "browser": {
+    "app1": false   
   },
   "devDependencies": {
     "@babel/core": "^7.23.3",

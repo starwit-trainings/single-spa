@@ -1,10 +1,11 @@
-import { registerApplication, start } from "single-spa";
+import { registerApplication, localStorage, start } from "single-spa";
 import {
   constructApplications,
   constructRoutes,
   constructLayoutEngine,
 } from "single-spa-layout";
 import microfrontendLayout from "./microfrontend-layout.html";
+
 
 const routes = constructRoutes(microfrontendLayout);
 const applications = constructApplications({
@@ -17,6 +18,7 @@ const layoutEngine = constructLayoutEngine({ routes, applications });
 
 applications.forEach(registerApplication);
 layoutEngine.activate();
+
 /*
 registerApplication(
   '@starwit/app1',
@@ -27,13 +29,19 @@ registerApplication(
 registerApplication(
   '@starwit/app2',
   () => System.import('@starwit/app2'),
-  location => location.pathname.startsWith('/app2/')
+  location => location.pathname.startsWith('/app2')
 );
 
+registerApplication(
+  '@starwit/app3',
+  () => System.import('@starwit/app3'),
+  () => location.pathname.startsWith('/app3')
+);
+/*
 registerApplication({
   name: "@starwit/app3",
   app: () => System.import("@starwit/app3"),
   activeWhen: "/app3"
-});
+});*/
 
 start();

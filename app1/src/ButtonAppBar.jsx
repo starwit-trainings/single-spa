@@ -16,8 +16,8 @@ export default function ButtonAppBar() {
           <Typography variant="h1" component="div" sx={{ flexGrow: 1}}>
             Single Spa Web App
           </Typography>
-          <Button variant="contained" color='secondary' href={baseUrl + "/app2/"}>Vue Example</Button>
-          <Button variant="contained" color='secondary' href={baseUrl + "/app3/"}>Angular Example</Button>
+          <Button variant="contained" color='secondary' href={baseUrl + "/app2"}>Vue Example</Button>
+          <Button variant="contained" color='secondary' href={baseUrl + "/app3"}>Angular Example</Button>
 
         </Toolbar>
       </AppBar>

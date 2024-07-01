@@ -7,6 +7,9 @@ module.exports = (webpackConfigEnv, argv) => {
     projectName: "app1",
     webpackConfigEnv,
     argv,
+    resolve: {
+      extensions: ['.ts', '.js'],
+    }
   });
 
   return merge(defaultConfig, {
