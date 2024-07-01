@@ -1,17 +1,17 @@
 name: service-composition-single-spa
 services:
-#  root:
-#    build: ./root
-#    ports:
-#      - 9000:9000
-#  app1:
-#    build: ./app1
-#    ports:
-#      - 8500:8500
-#  app2:
-#    build: ./app2
-#    ports:
-#      - 4000:4000
+  root:
+    build: ./root
+    ports:
+      - 9000:9000
+  app1:
+    build: ./app1
+    ports:
+      - 8500:8500
+  app2:
+    build: ./app2
+    ports:
+      - 4000:4000
   app3:
     build: ./app3
     ports:
