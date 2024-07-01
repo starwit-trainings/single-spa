@@ -4,12 +4,12 @@ const ColorTheme = createTheme({
     palette: {
         type: "light",
         primary: {
-            main: "#0B3954",
+            main: "#444",
             contrastText: "#fff"
         },
         secondary: {
-            main: "#FF8552",
-            contrastText: "#000"
+            main: "#999",
+            contrastText: "#fff"
         },
         background: {
             default: "#f1f1f1",
