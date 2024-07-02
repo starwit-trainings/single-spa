@@ -12,8 +12,8 @@ services:
     build: ./app2
     ports:
       - 4000:4000
-  app3:
-    build: ./app3
-    ports:
-      - 4200:4200
+#  app3:
+#    build: ./app3
+#    ports:
+#      - 4200:4200
 
